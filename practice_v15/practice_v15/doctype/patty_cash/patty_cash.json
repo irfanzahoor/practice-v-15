@@ -1,0 +1,136 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2024-08-06 16:19:30.252193",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_mlwo",
+  "transaction_id",
+  "date",
+  "amount",
+  "category",
+  "payee",
+  "received_by",
+  "column_break_nzgc",
+  "approved_by",
+  "balance",
+  "receipt_attached",
+  "transaction_type",
+  "currency",
+  "section_break_tfvq",
+  "notes",
+  "section_break_mikt",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_mlwo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "transaction_id",
+   "fieldtype": "Autocomplete",
+   "hidden": 1,
+   "label": "Transaction ID"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Data",
+   "label": "Category"
+  },
+  {
+   "fieldname": "payee",
+   "fieldtype": "Data",
+   "label": "Payee"
+  },
+  {
+   "fieldname": "received_by",
+   "fieldtype": "Data",
+   "label": "Received By"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved By"
+  },
+  {
+   "fieldname": "balance",
+   "fieldtype": "Data",
+   "label": "Balance"
+  },
+  {
+   "fieldname": "receipt_attached",
+   "fieldtype": "Attach Image",
+   "label": "Receipt Attached"
+  },
+  {
+   "fieldname": "transaction_type",
+   "fieldtype": "Data",
+   "label": "Transaction Type"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "column_break_nzgc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_tfvq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_mikt",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-06 17:26:54.244539",
+ "modified_by": "Administrator",
+ "module": "Practice V15",
+ "name": "Patty Cash",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

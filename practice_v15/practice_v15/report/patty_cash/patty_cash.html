@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Expense Report</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th,
+    td {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    .totals-row {
+      font-weight: bold;
+      background-color: #e2e2e2;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Expense Report</h1>
+
+  {% if data %}
+  <table>
+    <thead>
+      <tr>
+        <th>Amount</th>
+        <th>Category</th>
+        <th>Payee</th>
+        <th>Received By</th>
+        <th>Approved By</th>
+        <th>Balance</th>
+        <th>Transaction Type</th>
+        <th>Currency</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in data %}
+      <tr class="totals-row">
+        <td>{{ row.amount }}</td>
+        <td>{{ row.category }}</td>
+        <td>{{ row.payee }}</td>
+        <td>{{ row.received_by }}</td>
+        <td>{{ row.approved_by }}</td>
+        <td>{{ row.balance }}</td>
+        <td>{{ row.transaction_type }}</td>
+        <td>{{ row.currency }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p>No data available.</p>
+  {% endif %}
+
+</body>
+
+</html>
